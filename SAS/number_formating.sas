@@ -32,6 +32,8 @@ cards;
 145 kunal 25 male
 134 ramya 25 female
 ;
+run;
+
 proc print data = clin;
 run;
 
