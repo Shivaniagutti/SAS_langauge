@@ -30,7 +30,7 @@ run;
 
 /*_null_ it is used for data execution*/
 data _null_;
-x='ABCDEF-!1234';
+x='ABCDEF-!1234fdff';
 string=compress(x,'','ak');
 put string=;
 run;
