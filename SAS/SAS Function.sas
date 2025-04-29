@@ -62,3 +62,10 @@ string='Hi, How are you doing?';
 first_word=scan(string, 1, ' ' );
 put first_word =;
 run;
+
+/* Remove specific Character*/
+data _null_;
+x='ABCDEF-!1234';
+string =compress(x,'!4');
+put string = ;
+run;
