@@ -151,7 +151,84 @@ op=find(a,"what");
 op1=find(a,"what",op+3);
 run;
 
+/*Tranwrd Function*/
+data _null_;
+n="Mrs. Joan Smith";
+name=tranwrd(n, "Joan", "Demo");
+put name=;
+run;
 
+
+/*Translet Function*/
+data _null_;
+n="XYZWQGDEVW";
+x = translate('XYZW','AB','VW');
+put x= ;
+run;
+
+/*Input Function*/
+data temp;
+x = '12345';
+new_x = input(x,5.);
+run;
+
+
+/*Put Function*/
+data temp;
+x = 12345;
+new_x = put(x,5.);
+run;
+
+/*Length Function*/
+data _null_;
+x='ABCDEF-!1.234';
+n= length(x);
+put n=;
+run;
+
+
+/*IF THEN Function*/
+data mydata;
+input names $30.;
+cards;
+Raj Gates
+Allen Lee
+Dave Sandy
+William Gates
+Jon Jedi
+;
+run;
+data mydata2;
+set mydata;
+length new_names $30.;
+if find(names, "Raj")  then new_names = "Raj Kumar";
+else new_names = names;
+run;
+
+
+/*Count Function*/
+data _null_;
+name = "DeepAnshu Bhalla";
+x = count(name,"a");
+x1 = count(name,"a","i");
+put x= x1=;
+run;
+
+
+/*Count Function*/
+data readin;
+input name$15.;
+cards;
+Trait Jhonson
+3+3=6
+;
+run;
+
+data out;
+set readin;
+x = countw(name);
+x1 = countw(name,' ');
+run;
 
 
 
