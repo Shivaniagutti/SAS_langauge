@@ -63,7 +63,7 @@ var1 = ceil(X);
 run;
 
 
-/*FLOOR function*/
+/*FLOOR function   */
 data CMM;
 x=86.71;
 var1=FLOOR(X);
