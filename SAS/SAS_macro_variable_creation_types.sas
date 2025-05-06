@@ -5,7 +5,6 @@
 
 %put karan2=&karan2;
 
-
 /*proc sql into method*/
 
 data army;
