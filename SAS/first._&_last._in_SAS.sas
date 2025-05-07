@@ -1,5 +1,6 @@
 /*First . & Last . in SAS */
 
+
 data shivansh;
 input ID Name$;
 cards;
